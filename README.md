@@ -11,7 +11,7 @@ It's include the following plugins:
 ## Usage
 
 ```sh
-docker run -it guiadco/semantic-release-gitlab:latest
+docker run -it guiadco/semantic-release-gitlab:1.0.0
 bash-4.4# git clone https://github.com/your/repo.git
 bash-4.4# cd repo
 bash-4.4# semantic-release ...
