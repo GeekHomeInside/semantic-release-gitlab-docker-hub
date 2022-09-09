@@ -4,6 +4,7 @@ LABEL Name="Semanctic-release" Description="This image is used to start semantic
 ENV PATH="/node_modules/.bin:${PATH}"
 RUN apk add --no-cache bash git openssh
 COPY package.json /
+COPY package-lock.json /
 RUN npm ci
 
 ENTRYPOINT ["/bin/bash", "-c"]
